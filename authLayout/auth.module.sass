@@ -1,0 +1,47 @@
+@import 'libs/styles/src/mixins/_texts'
+@import 'libs/styles/src/mixins/_templates'
+@import 'libs/styles/src/_var'
+
+$headerHeight: 64px
+$footerHeight: 50px
+
+.auth
+    @include flex($justify: space-between)
+    width: 100%
+
+    :global(.container)
+        padding-top: 16px
+        padding-bottom: 30px
+        max-width: 350px
+
+.background
+    @include flex($align: center)
+    position: relative
+    overflow: hidden
+    flex: 0 0 30%
+    min-height: calc(100vh - $headerHeight - $footerHeight) !important
+ 
+    .img
+        width: 100%
+        height: auto
+        position: relative
+        bottom: -70px
+        z-index: 3
+
+.line
+    position: absolute
+    width: 110%
+    height: 67px
+    left: 0
+
+    &.red
+        background-color: $redFF_bg
+        transform: rotateZ(345deg) translateY(-125%)
+        z-index: 2
+
+    &.green
+        background-color: $green79_bg
+
+
+
+    

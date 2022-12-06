@@ -1,0 +1,27 @@
+@import 'libs/styles/src/mixins/_templates'
+@import 'libs/styles/src/mixins/_texts'
+@import 'libs/styles/src/_var'
+
+.info
+  @include header_Caption
+  text-align: center
+  max-width: 220px
+  width: 100%
+  margin: 0 auto
+  position: relative
+
+  span
+    font-weight: 700
+
+  a
+    color: $blue300
+    background-color: transparent
+
+  &.reset
+    text-align: left
+    margin-left: 0
+    color: $gray500
+
+    button
+      color: $blue300
+      background-color: transparent

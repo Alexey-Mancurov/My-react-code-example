@@ -1,0 +1,26 @@
+@import 'libs/styles/src/mixins/_templates'
+@import 'libs/styles/src/_var'
+
+.header
+    width: 100%
+    z-index: 2
+    position: relative
+
+    .container
+        min-height: 64px
+        @include flex($justify: space-between, $align: center)
+
+.login
+    justify-items: end
+    min-height: 40px
+    width: auto
+    margin-right: 5%
+
+    button
+        color: $white
+
+.back
+    margin-left: 10%
+
+.bg
+    z-index: -1
